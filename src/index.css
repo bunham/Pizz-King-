@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-primary: #FF5722;
+  --color-primary-dark: #cc461b;
+  --color-secondary: #121212;
+  --color-accent: #FFC107;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-secondary font-sans leading-relaxed transition-colors duration-300;
+  }
+}
+
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+.pizza-card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(255, 87, 34, 0.2);
+}
